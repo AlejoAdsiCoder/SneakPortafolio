@@ -24,16 +24,6 @@ h1, h2, h3 {
     display: none;
 }
 
-.navbar__nav {
-    max-width: 600px;
-    width: 100%;
-}
-
-.navbar__nav {
-    max-width: 595px;
-    width: 100%;
-}
-
 .navbar__logo {
     width: 186px;
     height: 35px;
@@ -43,6 +33,7 @@ h1, h2, h3 {
     padding: 12px 26px;
     text-decoration: none;
     color: #707070;
+    letter-spacing: 0.1em;
 }
 
 .navbar__link:hover {
@@ -72,7 +63,8 @@ h1, h2, h3 {
     }
 
     .navbar__nav.navbar__nav--mobile {
-        max-width: 100%;
+        width: 100%;
+        text-align: center;
     }
 
     .navbar__nav--mobile {
@@ -117,8 +109,15 @@ h1, h2, h3 {
     color: white;
 }
 
+/* Banner */
+
 .banner__desc {
     max-width: 692px;
+    letter-spacing: 0.2em;
+}
+
+.banner__title {
+    letter-spacing: 0.3em;
 }
 
 .banner__button, .gallery__button {
@@ -130,6 +129,27 @@ h1, h2, h3 {
     color: #fc758c;
     text-transform: uppercase;
     cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.banner__button {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 765px) {
+    .banner {
+        min-height: 360px;
+    }
+
+    .banner__title {
+        font-size: 1.3rem;
+    }
+}
+/* Banner */
+
+.gallery__button {
+    letter-spacing: 0.1em;
 }
 
 .main-content {
@@ -139,6 +159,10 @@ h1, h2, h3 {
 }
 
 /* Start Galleria */
+
+.gallery__photo {
+    position: relative;
+}
 
 .gallery {
     display: flex;
@@ -175,6 +199,55 @@ h1, h2, h3 {
     color: white;
     margin: 36px auto;
     text-transform: capitalize;
+}
+
+.gallery__overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.gallery__photo:hover .gallery__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    left: 20px;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    transition: .5s ease;
+    background-color:#fe667f;;  
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gallery__overlay span {
+    font-family: 'MontserratSemiBold';
+    border-bottom: 2px solid white;
+    padding: 23px;
+}
+
+.gallery__overlay p {
+    text-transform: capitalize;
+    height: 12px;
+    margin: 24px 0;
+}
+
+@media (max-width: 560px) {
+    .gallery__overlay {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 432px) and (min-width: 400px) {
+    .gallery__overlay {
+        font-size: 0.45rem;
+    }
 }
 
 /* Mobile Gallery */
