@@ -23,7 +23,7 @@ function photoGallery({ urls }) {
 }
 
 function getImages() {
-    fetch(`https://api.unsplash.com/photos/random?client_id=${access_key}&count=10`)
+    fetch(`https://api.unsplash.com/photos/random?client_id=${access_key}&count=16`)
         .then(res => res.json())
         .then(json => 
             {
