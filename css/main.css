@@ -219,7 +219,7 @@ h1, h2, h3 {
 .gallery__button {
     background-color: #ff5672;
     color: white;
-    margin: 36px auto;
+    margin: 36px auto 76px;
     text-transform: capitalize;
 }
 
@@ -306,6 +306,7 @@ h1, h2, h3 {
 .foot__social {
     display: flex;
     justify-content: center;
+    margin-bottom: 55px;
     gap: 17px;
     padding: 0;
 }
@@ -319,6 +320,7 @@ h1, h2, h3 {
 .foot__copy {
     text-transform: capitalize;
     letter-spacing: 0.2em;
+    margin-bottom: 50px;
 }
 
 .foot__copy span {
