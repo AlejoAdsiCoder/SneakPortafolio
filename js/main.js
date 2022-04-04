@@ -1,4 +1,4 @@
-const gallery = document.querySelector(".gallery .gallery__grid");
+const gallery = document.querySelector(".gallery .gallery__grid .gallery__content");
 const access_key = 'URsUbqNo-_8C9C3DRGKvsrSnPhAFzisz2nxCAlnE17Q';
 const btnBurguer = document.querySelector(".navbar .navbar__hamburger")
 const navbar = document.querySelector(".navbar__nav");

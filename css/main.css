@@ -205,10 +205,16 @@ h1, h2, h3 {
 }
 
 .gallery__grid {
-   column-count:3;
-   column-gap:5px;
-   max-width: 1172px;
-   line-height:0;
+    max-width: 1172px;
+    max-height: 1429px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery__content {
+    column-count: 3;
+    column-gap: 5px;
+    line-height: 0;
 }
 
 .gallery__grid img {
@@ -285,13 +291,13 @@ h1, h2, h3 {
         flex-direction: column;
     }
 
-    .gallery__grid {
+    .gallery__content {
         column-count: 2;
     }
  }
 
 @media (max-width: 400px) {
-    .gallery__grid {
+    .gallery__content {
         column-count: 1;
     }
 }
